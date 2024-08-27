@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expedición Argentina</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
-        <div class="logo itemHeader">
-            <img src="./img/Logo.png" alt="logo expedición Argentina" width="100px" height="50px">
+        <div class="headerLeft">
+            <a href="#header">
+                <img src="./img/Logo.png" alt="logo expedición Argentina" width="100px" height="50px" class="logo">
+            </a>
         </div>
-        <div class="itemHeader">
-            <a href="#showOfPlaces">Destinos</a>
-            <a href="aboutMe">Sobre Mi</a>
-            <a href="footer">New Letter</a>
+        <div class="headerRight">
+            <a href="#showcaseOfPlaces" class="headerItem">Destinos</a>
+            <a href="#aboutMe" class="headerItem">Sobre Mi</a>
+            <a href="#footer" class="headerItem">New Letter</a>
         </div>
     </header>
     <section id="hero">
         <div class="heroLeft">
-            <h1 class="h1a">¡Bienvenido a Expedición Argentina!</h1>
-            <p> Desde Ushuaia hasta La Quiaca, te llevamos a recorrer lo mejor de Argentina.Aquí encontrarás todo lo necesario para explorar el país: los lugares más impresionantes, dónde comer, qué hacer y cómo aprovechar cada destino al máximo. Ya sea que te interese la aventura en la Patagonia, la vibrante vida urbana de Buenos Aires o los encantos del norte, aquí tienes recomendaciones y consejos para cada rincón. Prepárate para una experiencia increíble en uno de los destinos más diversos y emocionantes de Sudamérica. ¡Vamos a explorar juntos! Y no olvides seguirnos en nuestras redes sociales para más inspiración y actualizaciones.</p>
-            <div class="social">
-                <a href="#"></a>
+            <div class="heroLeft_titulo">
+                <h1 class="h1a">Bienvenidos a</h1>
+                <h1 class="h1a">Expedición Argentina</h1>
+            </div>
+            <div class="heroLeft_pContainer">
+                <p> Desde Ushuaia hasta La Quiaca, te llevamos a recorrer lo mejor de Argentina.</p>
+                <p> Aquí encontrarás todo lo necesario para explorar el país: los lugares más impresionantes, dónde comer, qué hacer y cómo aprovechar cada destino al máximo. Ya sea que te interese la aventura en la Patagonia, la vibrante vida urbana de Buenos Aires o los encantos del norte, aquí tienes recomendaciones y consejos para cada rincón.</p>
+                <p> Prepárate para una experiencia increíble en uno de los destinos más diversos y emocionantes de Sudamérica.</p>
+                <p> ¡Vamos a explorar juntos! Y no olvides seguirnos en nuestras redes sociales para más inspiración y actualizaciones.</p>
+            </div>
+            <div class="heroLeft_social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
             </div>
         </div>
         <div class="heroRight">
             <img src="./img/img-hero.avif" alt="Men Traveling" width="400px" height="400px">
         </div>
+    </section>
     <main>
         <section id="showcaseOfPlaces">
 
@@ -102,6 +120,7 @@
                 <a href="#"></a>
             </div>
         </section>
+
         <section id="callToAction">
             <div class="newLetterContainer">
                 <h3>Suscríbete a Nuestro Boletín</h3>

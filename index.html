@@ -8,21 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- HEADER -->
     <header id="header">
         <div class="headerLeft">
-            <a href="#header"> <img src="./img/LOGO.SVG" alt="logo Expedición Argentina" width="60px" height="60px"></a>
+            <a href="#hero"> <img src="./img/LOGO.SVG" alt="logo Expedición Argentina" width="50px" height="50px"></a>
         </div>
         <div class="headerRight">
-            <a href="#showcaseOfPlaces" class="headerItem">Destinos</a>
-            <a href="#aboutMe" class="headerItem">Sobre Mi</a>
-            <a href="#footer" class="headerItem">New Letter</a>
+            <a href="#showcaseOfPlaces" class="headerItem">DESTINOS</a>
+            <a href="#aboutMe" class="headerItem">SOBRE MI</a>
+            <a href="#footer" class="headerItem">NEW LETTER</a>
         </div>
     </header>
+
+    <!-- HERO -->
     <section id="hero">
         <div class="heroLeft">
             <div class="heroLeft_titulo">
@@ -41,84 +44,69 @@
             </div>
         </div>
         <div class="heroRight">
-            <img src="./img/img-hero.avif" alt="Men Traveling" width="400px" height="400px">
+            <img src="./img/img-hero2.jpg" alt="Men Traveling" width="400px" height="400px">
         </div>
     </section>
+
+    <!-- MAIN -->
     <main>
+        <!-- SHOWCASE OF PLACES -->
         <section id="showcaseOfPlaces">
 
-            <h2 class="h1b">Descubre tu proximo destino</h2>
+            <h2 class="h1b">DESCUBRE TU PROXIMO DESTINO</h2>
 
-            <!-- Boxes -->
-             <div class="RegionsContainer">
-
-                <div class="item-showcase-of-place">
-                    <h3>Región del Gran Buenos Aires</h3>
-                    <img src="" alt="">
-                    <p>"La Región del Gran Buenos Aires es el epicentro urbano de Argentina, donde la vibrante ciudad de Buenos Aires y su área metropolitana ofrecen una mezcla de cultura, vida nocturna y arquitectura histórica. Es el lugar perfecto para sumergirse en la energía de una de las ciudades más dinámicas de Sudamérica.</p>
-                    <ul>
-                        <li>CABA (Ciudad Autónoma de Buenos Aires)</li>
-                        <li>AMBA (Ciudad metropolitana de Buenos Aires)/li>
-                        <li>Playas de Buenos Aires</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Norte Argentino</h3>
-                    <img src="" alt="">
-                    <p>El Norte Argentino abarca una variedad de paisajes, desde la exuberante selva y los ríos en el Noreste, hasta los altiplanos y valles en el Noroeste. Es una región rica en cultura, historia y naturaleza.</p>
-                    <ul>
-                        <li><a href="ruta-a-salta">Salta</a></li>
-                        <li><a href="ruta-a-jujuy">Jujuy</a></li>
-                        <li><a href="ruta-a-tucuman">Tucumán</a></li>
-                        <li><a href="ruta-a-corrientes">Corrientes</a></li>
-                        <li><a href="ruta-a-misiones">Misiones</a></li>
-                        <li><a href="ruta-a-formosa">Formosa</a></li>
-                    </ul>
-                </div>
+            <div class="showcaseOfPlace_cardContainer">
                 
-                <div>
-                    <h3>Cuyo</h3>
-                    <img src="" alt="">
-                    <p>La región de Cuyo es conocida por sus impresionantes paisajes montañosos, viñedos extensos y una rica oferta enoturística. Es un destino ideal para los amantes del vino y la naturaleza.</p>
-                    <ul>
-                        <li><a href="ruta-a-mendoza">Mendoza</a></li>
-                        <li><a href="ruta-a-san-juan">San Juan</a></li>
-                        <li><a href="ruta-a-san-luis">San Luis</a></li>
-                    </ul>
+                <div class="showcaseOfPlace_cardContainer-card" style="background-image: url(./img/HUMAHUACA.jpg);">
+                    <div class="showcaseOfPlace_cardContainer-cardContent">
+                      <h2>NOR-OESTE ARGENTINO</h2>
+                      <p>Descripción 2</p>
+                    </div>
                 </div>
-                
-                <div>
-                    <h3>Centro</h3>
-                    <img src="" alt="">
-                    <p>La región Centro de Argentina combina ciudades vibrantes con un entorno natural diverso. Es un punto de conexión entre el norte y el sur del país, con una rica herencia cultural y económica.</p>
-                    <ul>
-                        <li><a href="ruta-a-cordoba">Córdoba</a></li>
-                        <li><a href="ruta-a-rio-cuarto">Río Cuarto</a></li>
-                        <li><a href="ruta-a-villa-general-belgrano">Villa General Belgrano</a></li>
-                    </ul>
+                <div class="showcaseOfPlace_cardContainer-card" style="background-image: url(./img/REGION\ GRAN\ BUENOS\ AIRES.jpg)">
+                    <div class="showcaseOfPlace_cardContainer-cardContent">
+                      <h2>REGIÓN PAMPEANA</h2>
+                      <p>Descripción 1</p>
+                    </div>
+                </div>
+                <div class="showcaseOfPlace_cardContainer-card" style="background-image: url(./img/IGUAZU.avif);">
+                    <div class="showcaseOfPlace_cardContainer-cardContent">
+                      <h2>NOR-ESTE ARGENTINO</h2>
+                      <p></p>
+                    </div>
+                </div>
+                <div class="showcaseOfPlace_cardContainer-card" style="background-image: url(./img/VIÑEDOS.avif);">
+                    <div class="showcaseOfPlace_cardContainer-cardContent">
+                      <h2>REGION DE CUYO</h2>
+                      <p>Descripción 3</p>
+                    </div>
+                </div>
+                <div class="showcaseOfPlace_cardContainer-card" style="background-image: url(./img/CATEDRAL\ DE\ CORDOBA.jpg);">
+                    <div class="showcaseOfPlace_cardContainer-cardContent">
+                      <h2>REGIÓN CENTRO</h2>
+                      <p>Descripción 3</p>
+                    </div>
+                </div>
+                <div class="showcaseOfPlace_cardContainer-card" style="background-image: url(./img/GLACIAR\ PERITO\ MORENO.avif);">
+                    <div class="showcaseOfPlace_cardContainer-cardContent">
+                      <h2>PATAGONIA ARGENTINA</h2>
+                      <p>Descripción 1</p>
+                    </div>
                 </div>
 
-                <div>
-                    <h3>Patagonia</h3>
-                    <img src="" alt="">
-                    <p>La Patagonia es una región de vastos paisajes naturales, que incluyen montañas, glaciares y lagos. Es ideal para los amantes de la aventura y la naturaleza, ofreciendo actividades al aire libre en un entorno impresionante.</p>
-                    <ul>
-                        <li><a href="ruta-a-bariloche">Bariloche</a></li>
-                        <li><a href="ruta-a-el-calafate">El Calafate</a></li>
-                        <li><a href="ruta-a-ushuaia">Ushuaia</a></li>
-                    </ul>
-                </div>
-             </div>
+            </div>
         </section>
+
+        <!-- ABOUT ME -->
         <section id="aboutMe">
             <div class="aboutMe_container">
                 <p>Soy Fernando, un apasionado de los viajes y explorador incansable de los rincones más fascinantes de Argentina. En este blog, mi objetivo es guiarte a través de una serie de recomendaciones sobre destinos, actividades y experiencias únicas que el país tiene para ofrecer. Desde las majestuosas montañas de la Patagonia hasta los vibrantes paisajes del Norte, encontrarás información detallada y consejos útiles para que puedas vivir cada viaje al máximo. Prepárate para sumergirte en aventuras inolvidables y descubrir lo mejor de Argentina, ¡tu próxima gran experiencia te está esperando!</p>
-                <P>Sigueme en Instagram</P>
+                <P>Sígueme en Instagram</P>
                 <a href="#"></a>
             </div>
         </section>
 
+        <!-- CALL TO ACTION -->
         <section id="callToAction">
             <div class="newLetterContainer">
                 <h3>Suscríbete a Nuestro Boletín</h3>
@@ -130,6 +118,8 @@
             </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
     <footer id="footer">
         <p>Copyright © Expedición Argentina 2024</p>
     </footer>

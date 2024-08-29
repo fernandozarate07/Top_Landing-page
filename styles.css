@@ -39,17 +39,18 @@ a {
     left: 0;
     z-index: 100;
 
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    backdrop-filter: blur(10px); 
 }
 
 #header a {
     font-size: 1.2rem;
     transition: color 0.3s ease;
+    color: var(--color-black);
 }
 
 #header a:hover {
@@ -140,7 +141,7 @@ a {
 }
 
 #showcaseOfPlaces h2 {
-    margin: 40px;
+    margin: 20px;
 }
 
 .showcaseOfPlace_cardContainer {
@@ -168,13 +169,17 @@ a {
 .showcaseOfPlace_cardContainer-cardContent {
     position: absolute;
     width: 100%;
-    padding: 10px;
-    height: 50%;
+    height: 20%;
     bottom: 0; 
     left: 0;
 
     background: rgba(0, 0, 0, 0.3); 
     text-align: center;
+    transition: height 1s ease-in-out;
+}
+.showcaseOfPlace_cardContainer-card:hover .showcaseOfPlace_cardContainer-cardContent {
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .showcaseOfPlace_cardContainer-card h2 {

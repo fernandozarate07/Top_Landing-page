@@ -10,7 +10,12 @@ html {
     font-family: "Montserrat", sans-serif;
     color: var(--color-black);
 }
-
+input::placeholder {
+    text-align: center;
+}
+input:focus {
+    outline: none; 
+}
 :root {
     --color-light-blue: #75AADB;
     --color-white: #F5F5F5;
@@ -39,22 +44,22 @@ a {
     left: 0;
     z-index: 100;
 
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(10px); 
+    background-color:#B0B0B0;
 }
 
 #header a {
     font-size: 1.2rem;
     transition: color 0.3s ease;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 #header a:hover {
-    color: var(--color-light-blue);
+    color: var(--color-yellow);
 }
 
 .headerRight,
@@ -132,6 +137,7 @@ a {
 
 /* SHOWCASE OF PLACES */
 #showcaseOfPlaces {
+    padding-top: 8vh;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -163,6 +169,7 @@ a {
     background-size: cover; 
     background-position: center;
     border-radius: 10px;
+    cursor: pointer;
     
 }
 
@@ -241,8 +248,56 @@ a {
     color: var(--color-white);
     font-size: 1.75rem;
 }
+/* CALL TO ACTION */
 #callToAction{
     height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #B0B0B0;
+}
+
+.newLetterContainer,
+.newLetterContainer_p,
+.newLetterContainer_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.newLetterContainer_p{
+    gap: 5px;
+}
+.newLetterContainer_p p{
+    width: 1000px;
+    text-align: center;
+}
+.newLetterContainer_form{
+    flex-direction: row;
+    gap: 20px;
+}
+.newLetterContainer_form input{
+    width: 400px;
+    height: 40px;
+
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--color-white);
+}
+.newLetterContainer_form button{
+    width: 200px;
+    height: 40px;
+
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+.newLetterContainer_form button:hover{
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
 }
 #footer{
     height: 5vh;
